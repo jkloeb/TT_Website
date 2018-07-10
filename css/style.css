@@ -1,0 +1,37 @@
+/*********** BODY ************/
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+
+/*********** HEADER ************/
+header {
+    text-align: left;
+    font-size: 32px;
+    background-image: url("hurricane_home.jpg");
+    background-repeat: no-repeat;
+}
+
+#headerID  {
+    font-weight: bold;
+    padding: 20px;
+}
+
+#pageName {
+    font-weight: normal;
+}
+
+/*********** TOP ************/
+
+section {
+    padding-left: 10%;
+}
+
+/*********** UNIVERSALS ************/
+
+/*********** SMALLEST BREAK POINT ************/
+
+/*********** SMALLER BREAK POINT ************/
+
+/*********** LARGER BREAK POINT ************/
