@@ -1,34 +1,127 @@
 /*********** BODY ************/
 body {
-    font-family: 'Roboto';
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*********** HEADER ************/
 header {
+    font-weight: 500;
     text-align: left;
-    font-size: 32px;
-    background-image: url("hurricane_home.jpg");
+    font-size: 40px;
+    background-image: url("hurricane_home2.jpg");
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #headerID  {
-    font-weight: bold;
-    padding: 20px;
+    padding-left: 10%;
+    padding-top: 2.5%;
 }
 
-#pageName {
-    font-weight: normal;
-}
-
-/*********** TOP ************/
-
-section {
+.pageName {
     padding-left: 10%;
 }
 
-/*********** UNIVERSALS ************/
+#pinkBar {
+    padding-left: 10%;
+    width: 400px;
+}
+
+.hQuote {
+    font-style: italic;
+    font-size:20px;
+    color: #FF004D;
+    padding-top: 20%;
+    padding-left: 50%;
+    padding-right: 10%;
+}
+
+.hQuoteSource {
+    font-weight: 300;
+    font-size:20px;
+    padding-left: 50%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
+
+/*********** BODY ************/
+section {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 15px;
+    font-weight: 500;
+}
+
+.heading {
+    font-size: 24px;
+}
+
+.subHeading {
+    font-size: 20px;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#teleLogo {
+    width: 35%;
+}
+
+.bio {
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+
+li {
+    font-size: 16px;
+    font-weight: 200;
+    margin: 8px;
+}
+
+.navbar{
+    overflow: hidden;
+    float: center;
+    width: 100%;
+    display: center;
+}
+
+.navbar a {
+    display: inline-block;
+    background-color: #BDBDBD;
+    border: none;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
+    cursor: pointer;
+    width: 24.5%;
+}
+
+.navbar a:hover {
+    background-color: #FF004D;
+    color: white;
+}
+
+/*.active {
+    background-color: #FF004D;
+    color: white;
+}*/
+
 
 /*********** SMALLEST BREAK POINT ************/
 
