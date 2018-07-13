@@ -1,9 +1,10 @@
-/*********** BODY ************/
+/*********** UNIVERSALS ************/
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+
 
 /*********** HEADER ************/
 header {
@@ -26,7 +27,7 @@ header {
 
 #pinkBar {
     padding-left: 10%;
-    width: 400px;
+    width: 440px;
 }
 
 .hQuote {
@@ -46,10 +47,44 @@ header {
     padding-bottom: 5%;
 }
 
+
+/*********** NAV BAR ************/
+.navbar{
+    overflow: hidden;
+    float: center;
+    width: 100%;
+    display: center;
+    background-color: #BDBDBD;
+}
+
+.navbar a {
+    display: inline-block;
+    background-color: #BDBDBD;
+    border: none;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    width: 19%;
+}
+
+.navbar a:hover {
+    background-color: #FF004D;
+    color: white;
+}
+
+/*.active {
+    background-color: #FF004D;
+    color: white;
+}*/
+
+
 /*********** BODY ************/
 section {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 16%;
+    padding-right: 20%;
     padding-top: 15px;
     font-weight: 500;
 }
@@ -67,13 +102,35 @@ section {
     font-weight: 200;
 }
 
-img {
+.textB {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.titleWImage {
+    display: inline;
+}
+
+#appIcon {
+    width: 4%;
+}
+
+#imageApp{
+    width: 80%;
+    padding: 10px 0px;
+}
+
+#ttl {
     max-width: 100%;
     height: auto;
 }
 
 #teleLogo {
     width: 35%;
+}
+
+#portrait{
+    width: 20%;
 }
 
 .bio {
@@ -87,41 +144,30 @@ li {
     margin: 8px;
 }
 
-.navbar{
-    overflow: hidden;
-    float: center;
-    width: 100%;
-    display: center;
+#gifApp{
+    width: 20%;
+    padding: 10px 0px;
 }
 
-.navbar a {
-    display: inline-block;
-    background-color: #BDBDBD;
-    border: none;
-    color: white;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    margin-left: 1px;
-    margin-right: 1px;
-    cursor: pointer;
-    width: 24.5%;
+#working{
+    width: 40%;
+    padding: 10px 0px;
 }
 
-.navbar a:hover {
-    background-color: #FF004D;
-    color: white;
+#servC{
+    width: 75%;
+    padding: 10px 0px;
 }
 
-/*.active {
-    background-color: #FF004D;
-    color: white;
-}*/
+#roadM{
+    width: 75%;
+    padding: 10px 0px;
+}
 
+#storyBoard{
+    width: 35%;
+    padding: 10px 0px;
+}
 
 /*********** SMALLEST BREAK POINT ************/
 
