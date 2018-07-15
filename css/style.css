@@ -50,6 +50,7 @@ header {
 
 /*********** NAV BAR ************/
 .navbar{
+    text-align: center;
     overflow: hidden;
     float: center;
     width: 100%;
@@ -83,10 +84,27 @@ header {
 
 /*********** BODY ************/
 section {
-    padding-left: 16%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 15%;
     padding-top: 15px;
     font-weight: 500;
+}
+
+.pageButtons {
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    background-color: white;
+    border-color: #FF004D;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+    padding: 15px;
+    cursor: pointer;
 }
 
 .heading {
