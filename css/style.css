@@ -84,7 +84,7 @@ header {
 
 /*********** BODY ************/
 section {
-    padding-left: 10%;
+    padding-left: 15%;
     padding-right: 15%;
     padding-top: 15px;
     font-weight: 500;
@@ -118,6 +118,7 @@ section {
 .text {
     font-size: 16px;
     font-weight: 200;
+    padding-right: 40%;
 }
 
 .textB {
