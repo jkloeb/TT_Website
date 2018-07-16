@@ -33,7 +33,7 @@ header {
 .hQuote {
     font-style: italic;
     font-size:20px;
-    color: #FF004D;
+    color: #BD33A4;
     padding-top: 20%;
     padding-left: 50%;
     padding-right: 10%;
@@ -50,28 +50,29 @@ header {
 
 /*********** NAV BAR ************/
 .navbar{
+    text-align: center;
     overflow: hidden;
     float: center;
     width: 100%;
     display: center;
-    background-color: #BDBDBD;
+    background-color: #49fb35;
 }
 
 .navbar a {
     display: inline-block;
-    background-color: #BDBDBD;
+    background-color: #49fb35;
     border: none;
-    color: white;
+    color: #BD33A4;
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
     text-decoration: none;
     font-size: 18px;
-    width: 19%;
+    width: 20%;
 }
 
 .navbar a:hover {
-    background-color: #FF004D;
+    background-color: #BD33A4;
     color: white;
 }
 
@@ -83,10 +84,29 @@ header {
 
 /*********** BODY ************/
 section {
-    padding-left: 16%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 15px;
     font-weight: 500;
+}
+
+.pageButtons {
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    background-color: white;
+    border-color: #BD33A4;
+    border-radius: 4px;
+    border-width: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+    padding: 15px;
+    cursor: pointer;
 }
 
 .heading {
@@ -100,6 +120,7 @@ section {
 .text {
     font-size: 16px;
     font-weight: 200;
+    padding-right: 40%;
 }
 
 .textB {
@@ -111,13 +132,18 @@ section {
     display: inline;
 }
 
+.g {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #appIcon {
     width: 4%;
 }
 
 #imageApp{
     width: 80%;
-    padding: 10px 0px;
 }
 
 #ttl {
@@ -146,27 +172,30 @@ li {
 
 #gifApp{
     width: 20%;
-    padding: 10px 0px;
 }
 
 #working{
     width: 40%;
-    padding: 10px 0px;
 }
 
 #servC{
     width: 75%;
-    padding: 10px 0px;
 }
 
 #roadM{
     width: 75%;
-    padding: 10px 0px;
 }
 
 #storyBoard{
-    width: 35%;
-    padding: 10px 0px;
+    width: 55%;
+}
+
+#affVid{
+    width: 40%;
+}
+
+#stakeholderMap{
+    width: 65%;
 }
 
 /*********** SMALLEST BREAK POINT ************/
