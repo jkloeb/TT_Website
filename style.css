@@ -68,7 +68,7 @@ header {
     text-align: center;
     text-decoration: none;
     font-size: 18px;
-    width: 15%;
+    width: 20%;
 }
 
 .navbar a:hover {
@@ -130,13 +130,18 @@ section {
     display: inline;
 }
 
+.g {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #appIcon {
     width: 4%;
 }
 
 #imageApp{
     width: 80%;
-    padding: 10px 0px;
 }
 
 #ttl {
@@ -165,27 +170,30 @@ li {
 
 #gifApp{
     width: 20%;
-    padding: 10px 0px;
 }
 
 #working{
     width: 40%;
-    padding: 10px 0px;
 }
 
 #servC{
     width: 75%;
-    padding: 10px 0px;
 }
 
 #roadM{
     width: 75%;
-    padding: 10px 0px;
 }
 
 #storyBoard{
-    width: 35%;
-    padding: 10px 0px;
+    width: 55%;
+}
+
+#affVid{
+    width: 40%;
+}
+
+#stakeholderMap{
+    width: 65%;
 }
 
 /*********** SMALLEST BREAK POINT ************/
