@@ -1,90 +1,190 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>The Solution - Teletracking</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500" rel="stylesheet">
+    </head>
 
-<head>
-    <title>The Solution - Teletracking</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500" rel="stylesheet">
-</head>
+    <body>
+        <header>
+            <div id="headerID">
+                <p>TEAM TELETRACKING</p>
 
-<body>
-  <header>
-        <!-- Team Name -->
-        <div id="headerID">
-            <a>TEAM TELETRACKING</a>
+                <!-- Pink Bar -->
+                <p><img id="pinkBar" src="images/pinkBar.png"/></p>
+
+                <p>Our Solution</p>
+            </div>
+        </header>
+
+        <!-- Nav Bar -->
+        <div id="navbar">
+            <a href="index.html">Home</a>
+            <a href="theSolution.html" class="active">The Solution</a>
+            <a href="research.html">Research</a>
+            <a href="aboutUs.html">About Us</a>
         </div>
 
-        <!-- Pink Bar -->
-        <img id="pinkBar" src="images/pinkBar.png"/>
+        <section class="pageSections">
+            <p class="text">The solution contains three key components:</p>
+            <p><a href="#theMobileApp">The Mobile Application</a><p>
+            <p><a href="#servicePlan">The Service Plan</a></p>
+            <p><a href="#roadmap">A Future Roadmap</a></p>
+        </section>
 
-        <!-- Page Name -->
-        <div class="pageName">
-            <a>Our Solution</a>
-        </div>
+        <!-- Break Banner -->
+        <div class="banner"><video class="bannerImage" id="" src="videos/" type="video/mp4" alt=""/></div>
 
-        <!-- Quote -->
-        <div class="hQuote">"There will be a different quote here."</div>
-        <div class="hQuoteSource">And the background will be a different relevant image.</div>
-    </header>
+        <!-- The Mobile App -->
+        <section id="theMobileApp">
+            <p class="heading">The Mobile Application: Haven</p>
+                <p class="text">The heart of the solution, Haven helps citizens prepare for disasters, both in terms of material and logistics. To this end, there are four core features that facilate and nudge responsible citizen behaviours:</p>
 
-    <!-- Nav Bar -->
-    <div class="navbar">
-        <a href="index.html" class="active">Home</a>
-        <a href="theSolution.html">The Solution</a>
-        <a href="research.html">Research</a>
-        <a href="index.html#AboutUs">About Us</a>
-    </div>
+                    <!-- Images used to open the lightbox -->
+                    <div class="row">
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                      </div>
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                      </div>
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                      </div>
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                      </div>
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                      </div>
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                      </div>
+                    </div>
 
-    <section class="pageButtons">
-        <a href="#theMobileApp"><button class="button">Mobile App</button></a>
-        <a href="#servicePlan"><button class="button">Service Plan</button></a>
-    </section>
+                    <!-- The Modal/Lightbox -->
+                    <div id="myModal" class="modal">
+                      <span class="close cursor" onclick="closeModal()">&times;</span>
+                      <div class="modal-content">
 
-    <!-- The Mobile App -->
-    <section id="theMobileApp">
-        <p class="heading">The Mobile App</p>
+                        <div class="mySlides">
+                          <div class="numbertext">1 / 4</div>
+                          <img src="images/" style="width:100%">
+                        </div>
 
-        <p class="subHeading">Key Features</p>
-        <p class="textB">Onboarding</p>
-        <div class="gifApp"><img class="g" id="gifApp" src="images/gifImage.png"</div>
-        <p class="text">A Description of how the onboarding process works and why including key insights/drivers. Elit definiebas assueverit cu mea, sea ferri tibique fastidii ne. At doctus labitur interpretaris cum, cu stet persecuti duo. In omnium consequat has, ne usu sumo illud, per ad summo clita suscipit. Mel eius malorum probatus eu, sea fugit dicat at, mel tale impedit ut.</p>
+                        <div class="mySlides">
+                          <div class="numbertext">2 / 4</div>
+                          <img src="images/" style="width:100%">
+                        </div>
 
-        <p class="textB">Preparation</p>
-        <div class="imageApp"><img class="g" id="imageApp" src="images/process.png"</div>
-        <p class="text">A Description of how the preparation process works and why including key insights/drivers. Labitur qualisque ex nec. Eum labitur imperdiet gloriatur eu, pericula accusamus ullamcorper has ne. Solum libris perfecto vix cu. Detraxit convenire cu sea, ut quas fabellas sit. Mea periculis forensibus ex, ad minim timeam salutatus sit. Cu illud honestatis mea.</p>
+                        <div class="mySlides">
+                          <div class="numbertext">3 / 4</div>
+                          <img src="images/" style="width:100%">
+                        </div>
 
-        <p class="textB">Registration</p>
-        <div class="gifApp"><img class="g" id="gifApp" src="images/gifImage.png"</div>
-        <p class="text">A Description of how the registration process works and why including key insights/drivers. Vide utinam fierent eu usu, eam quem moderatius necessitatibus ad. Eu est diam malis. Cu vis movet delicata, mei illud persequeris accommodare id, ea eam fuisset fastidii delicatissimi. Tale ferri apeirian nam cu, dolorem aliquando te vel. Mea ex hinc delectus definiebas, munere tamquam sea ei. Cu vix omnium maiorum, ne vel accusam sententiae referrentur. An facilis suscipit eos, ex eirmod propriae appetere mel.</p>
+                        <div class="mySlides">
+                          <div class="numbertext">4 / 4</div>
+                          <img src="images/" style="width:100%">
+                        </div>
 
-        <p class="textB">Evacuation</p>
-        <div class="imageApp"><img class="g" id="imageApp" src="images/process.png"</div>
-        <p class="text">A Description of how the evacuation process works and why including key insights/drivers. Ei duo brute utroque definiebas, pri omnis ancillae an. Sea sonet aliquip ad. Option convenire ius ut. Eu mei debet verear utroque, ea duis voluptaria duo, ex vel adipiscing dissentias mediocritatem.</p>
-        <!-- Link to the Prototype -->
-        <!-- <a href="">Our Prototype</a> -->
+                        <div class="mySlides">
+                          <div class="numbertext">5 / 5</div>
+                          <img src="images/" style="width:100%">
+                        </div>
 
-        <p class="subHeading">Production Notes</p>
-        <p class="text">A discussion any parts of the process of making the app. I'll with technical decisions. Maluisset hendrerit sit ex. Eos mutat iuvaret deseruisse ei, tale iracundia comprehensam cum ea, te cibo graece eum. Pri an fabulas voluptatibus, erroribus adipiscing repudiandae an usu. Mel summo novum omnes eu, mutat minimum quo no. Et pro postea argumentum accommodare.</p>
-        <div class="working"><img class="g" id="working" src="images/workin.png"</div>
-        <p class="text">Then all move into more aesthetic choices. Making references to things we learned in our research. Ut usu dicit accusata, id sit nemore scripserit signiferumque. No enim vituperata eos, eum luptatum adipisci sapientem ei. Vel facer graece argumentum ne. Ei eam agam cetero.</p>
+                        <div class="mySlides">
+                          <div class="numbertext">5 / 5</div>
+                          <img src="images/" style="width:100%">
+                        </div>
 
-        <p class="subHeading">Further Areas For Exploration</p>
-        <p class="text">Here is a description areas where we could see this app going beyond what was built. This is a lead in to the next section...</p>
-    </section>
+                        <!-- Next/previous controls -->
+                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
 
-    <!-- Additional Solutions -->
-    <section id="servicePlan">
-        <p class="heading">Service Plan</p>
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                          <p id="caption"></p>
+                        </div>
 
-        <p class="text">A discription of what our service plan entails will go here. Homero quaeque forensibus te quo, est ex dolore constituto. Mei id eius cetero, animal fastidii dignissim pro no, cu legere placerat definiebas has. Error vivendum cu vel, ne vim etiam commodo. An nostrud fabulas sit.</p>
-        <div class="servC"><img class="g" id="servC" src="images/servC.png"</div>
-        <p class="text">Ferri verear minimum an has, elit assentior an est. Et case laoreet detraxit duo. Qui nemore abhorreant ea, eu mei omittam ancillae, in omnium omittam adolescens pri. Dolores sensibus inimicus mea cu, dicunt repudiare signiferumque in eos, fugit iisque habemus eu duo. Accusamus voluptaria definitionem ut usu, ut mucius quidam vim, eu malorum fabulas vim. Causae recusabo maluisset vel no, his gloriatur sententiae cu, soluta delicatissimi an mel.</p>
+                        <!-- Thumbnail image controls -->
+                        <div class="column">
+                          <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+                        </div>
 
-        <p class="subHeading">Further Areas For Exploration</p>
-        <p class="text">Our Road Map for our client will lay out a plan for the future development of our solution. Sed ut agam putant, duo error possim suscipit ad. Usu omnes singulis te, an zril exerci graeci pro, ius quodsi elaboraret ei. Iudico sadipscing id nec. Integre appetere eam ut, ne timeam discere inciderint quo. Eos insolens patrioque et, tale dicunt vulputate has at. Purto dicta vel et, ad nemore oportere pri.</p>
-        <div class="roadM"><img class="g" id="roadM" src="images/roadMap.png"</div>
-        <p class="text">More description of our roadmap's prescription. Te pri delenit facilis tibique, altera tincidunt vis ut, mea iudico patrioque ne. Cu per tritani blandit. Discere nusquam at vix, vix cibo detraxit cu. Vivendo invenire maiestatis ex vim, libris corrumpit adipiscing ex mei. Facete mediocritatem at est, ut duo everti facilis eleifend. Assum vocent democritum sea an, quidam virtute utroque ex vis.</p>
-    </section>
-</body>
+                        <div class="column">
+                          <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+                        </div>
 
+                        <div class="column">
+                          <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+                        </div>
+
+                        <div class="column">
+                          <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+                        </div>
+                      </div>
+                    </div>
+
+                <!-- <div class="blocks">
+                        <div class="gridItem">
+                            <a href="onboarding">Onboarding</a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="preparation">Preparation</a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="registration">Registration</a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="evacuation">Evacuation</a>
+                        </div>
+                </div> -->
+            </section>
+
+        <section class="findings">
+            <p class="subHeading" id="subHFind">About Coupons</p>
+            <p class="textF">Coupon text.</p>
+        </section>
+
+        <!-- Service Plan -->
+        <section id="servicePlan">
+            <p class="heading">Service Plan</p>
+
+            <p class="text">Alongside the Haven app, we are providing our client, Teletracking, with a service plan for data collection. While the app is intended to direct people away from hospitals in disasters, there is more that can be done to help hospitals in these critical situations. Below are some diagrams of the kind of data our app will be collecting and how that data can aid hospitals in better managing their operations during natural disasters.</p>
+                <div class="blocks">
+                        <div class="gridItem">
+                            <a href=""></a>
+                        </div>
+                        <div class="gridItem">
+                            <a href=""></a>
+                        </div>
+                </div>
+        </section>
+
+        <section class="findings">
+            <p class="subHeading" id="subHFind">Data collection</p>
+            <p class="textF">Data collection text.</p>
+        </section>
+
+        <!-- Roadmap -->
+        <section id="roadmap">
+            <p class="heading">Future Roadmap</p>
+            <p class="text">For the future expansion of the Sheltr app and service we’ve prepared a roadmap for Teletracking. It’s obviously not meant to be followed to the letter, but it should suggest useful avenues to pursue in the future:</p>
+                <div class="blocks">
+                        <div class="gridItem">
+                            <a href=""></a>
+                        </div>
+                </div>
+        </section>
+
+        <section class="findings">
+            <p class="subHeading" id="subHFind">Future Drivers</p>
+            <p class="textF">Drivers text.</p>
+        </section>
+    </body>
+
+        <!-- javascript -->
+        <script type="text/javascript" src="js/lightbox.js"></script>
+        <script type="text/javascript" src="js/navbar.js"></script>
 </html>

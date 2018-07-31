@@ -1,112 +1,320 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Research - Teletracking</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500" rel="stylesheet">
+    </head>
 
-<head>
-    <title>Research - Teletracking</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500" rel="stylesheet">
-</head>
+    <body>
+        <header>
+            <div id="headerID">
+                <p>TEAM TELETRACKING</p>
+                <!-- Pink Bar -->
+                <p><img id="pinkBar" src="images/pinkBar.png"/></p>
+                <p>Our Solution</p>
+            </div>
+        </header>
 
-<body>
-    <header>
-        <!-- Team Name -->
-        <div id="headerID">
-            <a>TEAM TELETRACKING</a>
+        <!-- Nav Bar -->
+        <div id="navbar">
+            <a href="index.html">Home</a>
+            <a href="theSolution.html">The Solution</a>
+            <a href="research.html" class="active">Research</a>
+            <a href="aboutUs.html">About Us</a>
         </div>
 
-        <!-- Pink Bar -->
-        <img id="pinkBar" src="images/pinkBar.png"/>
+        <section class="pageSections">
+            <p class="text">When we would begin a research phase, we turned to three families of methodology to better understand how people behave in disasters and why:</p>
+            <p><a href="#exploratory">Exploratory Research</a><p>
+            <p><a href="#generative">Generative Research</a></p>
+            <p><a href="#evaluative">Evaluative Research</a></p>
+        </section>
 
-        <!-- Page Name -->
-        <div class="pageName">
-            <a>Research</a>
-        </div>
+        <!-- Break Banner -->
+        <div class="banner"><video class="bannerImage" id="affVid" src="videos/affinity_timelapse.mp4" type="video/mp4" alt="Collecting and analyzing our exploratory data through Affinity Diagramming."/></div>
 
-        <!-- Quote -->
-        <div class="hQuote">"There will be a different quote here."</div>
-        <div class="hQuoteSource">And the background will be a different relevant image.</div>
-    </header>
+        <!-- Exploratory -->
+        <section id="exploratory">
+            <p class="heading">Navigating a Vast Domain (Exploratory Research)</p>
+                <p class="text">When we would begin a research phase, we turned to four exploratory research methods to better understand how people behave in disasters and why:</p>
 
-    <!-- Nav Bar -->
-    <div class="navbar">
-        <a href="index.html" class="active">Home</a>
-        <a href="theSolution.html">The Solution</a>
-        <a href="research.html">Research</a>
-        <a href="index.html#AboutUs">About Us</a>
-    </div>
+                    <!-- Images used to open the lightbox -->
+                    <div class="row">
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                      </div>
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                      </div>
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                      </div>
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                      </div>
+                    </div>
 
-    <section class="pageButtons">
-        <a href="#exploratory"><button class="button">Exploratory Research</button></a>
-        <a href="#generative"><button class="button">Generative Research</button></a>
-        <a href="#evaluative"><button class="button">Evaluative Research</button></a>
-    </section>
+                    <!-- The Modal/Lightbox -->
+                    <div id="myModal" class="modal">
+                      <span class="close cursor" onclick="closeModal()">&times;</span>
+                      <div class="modal-content">
 
-    <section>
-        <div class="video"><video class="g" id="affVid" src="videos/affinity_timelapse.mp4" type="video/mp4"></div>
-    </section>
+                        <div class="mySlides">
+                          <div class="numbertext">1 / 4</div>
+                          <img src="images/" style="width:100%">
+                        </div>
 
-    <!-- Exploratory -->
-    <section id="exploratory">
-        <p class="heading">Exploratory Research</p>
-            <p class="text">When we would begin a research phase, we turned to three exploratory research methods to better understand how people behave in disasters and why:</p>
-            <p class="subHeading">Methods Used</p>
-            <!-- List of Methods -->
-            <ul class="methodList">
-                <li>Secondary Research: A comprehensive reading of literature, both academic and popular related, to a host of topics related to disasters.</li>
-                <li>Guerrilla Research: Quick and dirty interviews with people about their experiences with disasters, or what they think they would do in a disaster.</li>
-                <li>Interviews: Detailed interviews, mostly over gchat with experts in the domain of disaster preparation and management.</li>
-            </ul>
+                        <div class="mySlides">
+                          <div class="numbertext">2 / 4</div>
+                          <img src="images/" style="width:100%">
+                        </div>
 
-            <p class="subHeading">Key Findings</p>
-            <p class="text">Right from the beginning we hit an interesting dilemma in our research: most of the secondary material doesn't indicate that hospitals are a common shelter of last resort, but through our interviews, we learned that this is indeed the case.</p>
-            <p class="text">More key finding text here. Brute illud epicurei est ad, nam an idque noster, sed denique delicata laboramus ad. Mei hinc cibo deseruisse cu, mel at vero debitis. Eam no detraxit atomorum, tale molestie oportere at his. Ei has mucius hendrerit mnesarchum, at aliquip mediocritatem mei. Ea novum dicit accusata eos, et mel erant qualisque hendrerit, quis ferri oblique id est.</p>
-    </section>
+                        <div class="mySlides">
+                          <div class="numbertext">3 / 4</div>
+                          <img src="images/" style="width:100%">
+                        </div>
 
-    <!-- Generative -->
-    <section id="generative">
-        <p class="heading">Generative Research and Design</p>
-        <div class="working"><img class="g" id="working" src="images/workin.png"</div>
-            <p class="text">From exploratory research we had to generate solutions that could help people and institutions in disasters. For this, we turned to a number of generative research methods:</p>
-            <p class="subHeading">Methods Used</p>
-            <!-- List of Methods -->
-            <ul class="methodList">
-                <li>How Might We?: Drafting ideas of how solutions to our problems could ideally work.</li>
-                <li>Crazy 8s: Generating 8 ideas to solve a specific problem in a period of 8 minutes. Repeat.</li>
-                <li>Visioning: Collaborative sketching. This generated some of our wildest ideas.</li>
-                <li>Stakeholder Mapping: Who are the actors in a disaster situation and how do they interact with and rely on each-other?</li>
-            <div class="stakeholderMap"><img class="g" id="stakeholderMap" src="images/stakerholdermap.png"</div>
-            </ul>
+                        <div class="mySlides">
+                          <div class="numbertext">4 / 4</div>
+                          <img src="images/" style="width:100%">
+                        </div>
 
-            <p class="subHeading">Ideation</p>
-            <!-- Summary of Ideation -->
-            <p class="text">First Idea</p>
-                <div class="storyBoard"><img class="g" id="storyBoard" src="images/Storyboard - Helpers.jpg"</div>
-                <p class="text">description of first this idea and its reception.</p>
+                        <!-- Next/previous controls -->
+                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
 
-            <p class="subHeading">Key Findings</p>
-            <p class="text">This will summarize what we learned from our ideations and fromn texting them and what we took forward from that. Brute illud epicurei est ad, nam an idque noster, sed denique delicata laboramus ad. Mei hinc cibo deseruisse cu, mel at vero debitis. Eam no detraxit atomorum, tale molestie oportere at his. Ei has mucius hendrerit mnesarchum, at aliquip mediocritatem mei. Ea novum dicit accusata eos, et mel erant qualisque hendrerit, quis ferri oblique id est.</p>
-    </section>
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                          <p id="caption"></p>
+                        </div>
 
-    <!-- Evaluative -->
-    <section id="evaluative">
-        <p class="heading">Evaluative Research</p>
-        <div class="working"><img class="g" id="working" src="images/workin.png"</div>
-            <p class="subHeading">Methods Used</p>
-            <!-- Text about our evaluations -->
-            <p class="text">A paragraph, or two about how we chose to evaluate/text our designs. Eu mollis fastidii accusata sit, an usu sonet homero. Qui lorem aeterno offendit cu. Pri homero inimicus id. Ut percipit partiendo maiestatis has, ut alii iuvaret noluisse nec, postea verterem imperdiet ex has. Verear virtute in nam. Esse soluta graece ei his, ea vel amet meliore urbanitas, id eros soleat iriure qui.</p>
+                        <!-- Thumbnail image controls -->
+                        <div class="column">
+                          <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+                        </div>
 
-            <!-- Metrics -->
-            <p class="subHeading">Metrics</p>
-            <p class="text">How did we measure our tests. Why? Per in volumus appareat. Mel cu dico accusam, mutat antiopam consetetur et his, nulla fuisset partiendo at usu. No eam ipsum eligendi prodesset, virtute partiendo abhorreant has no. Eam an inani doming vulputate. Ad volumus facilisi vel.</p>
+                        <div class="column">
+                          <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+                        </div>
 
-            <!-- Results -->
-            <p class="subHeading">Results</p>
-            <p class="text">What did our teste teach us? Ut sea convenire disputationi, et vitae hendrerit vix. Cum ei mundi verterem, ut nemore laboramus gloriatur est. Sed an tantas soleat, sit ne eros probo partem, eos simul nonumes epicuri ea. In usu recteque concludaturque, melius copiosae quo an. Illud tantas ut sit, nam in epicuri ocurreret consulatu. Te vix saepe propriae mediocritatem, delectus splendide adversarium ea usu.</p>
+                        <div class="column">
+                          <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+                        </div>
 
-            <!-- Further Refinements suggested by our research -->
-            <p class="subHeading">Further Refinements</p>
-            <p class="text">What directions did our tests point us to. Per in brute veniam audiam, ex sumo equidem ius. Vis porro sonet interesset ex, in postulant torquatos qui, ea nobis impetus est. Atqui doming utamur ei mea. In vis docendi temporibus, eos ad odio alia tractatos. Erat accusata signiferumque at ius, sint natum an est, eu vero novum his.</p>
-    </section>
-</body>
+                        <div class="column">
+                          <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+                        </div>
+                      </div>
+                    </div>
+                <!-- <div class="blocks">
+                        <div class="gridItem">
+                            <a href="secondary">Secondary Research</a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="guerrilla">Guerrilla Research</a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="expert">Expert Interviews</a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="survey">Surveys</a>
+                        </div>
+                </div> -->
+        </section>
 
+        <section class="findings">
+            <p class="subHeading" id="subHFind">Key Findings</p>
+            <p class="textF">Non-Patients show up because they think it’s safe, or it’s in the neighborhood, or they’re new citizens.</p>
+            <p class="textF">People who come cannot leave easily once the disaster is over and hospital employees often have to take them home themselves.</p>
+            <p class="textF">Hospitals resort to ad hoc methods to track non-patients.</p>
+            <p class="textF">There aren’t enough resources for special needs citizens in disasters.</p>
+        </section>
+
+        <!-- Generative -->
+        <section id="generative">
+            <p class="heading">Designing with Ideas (Generative Research)</p>
+                <p class="text">From exploratory research we had to generate actual solutions that could help people and institutions in disasters. For this, we turned to a number of generative research methods:</p>
+
+                    <!-- Images used to open the lightbox -->
+                    <div class="row">
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                      </div>
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                      </div>
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                      </div>
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                      </div>
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                      </div>
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                      </div>
+                    </div>
+
+                    <!-- The Modal/Lightbox -->
+                    <div id="myModal" class="modal">
+                      <span class="close cursor" onclick="closeModal()">&times;</span>
+                      <div class="modal-content">
+
+                        <div class="mySlides">
+                          <div class="numbertext">1 / 4</div>
+                          <img src="images/" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                          <div class="numbertext">2 / 4</div>
+                          <img src="images/" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                          <div class="numbertext">3 / 4</div>
+                          <img src="images/" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                          <div class="numbertext">4 / 4</div>
+                          <img src="images/" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                          <div class="numbertext">5 / 5</div>
+                          <img src="images/" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                          <div class="numbertext">5 / 5</div>
+                          <img src="images/" style="width:100%">
+                        </div>
+
+                        <!-- Next/previous controls -->
+                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                          <p id="caption"></p>
+                        </div>
+
+                        <!-- Thumbnail image controls -->
+                        <div class="column">
+                          <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+                        </div>
+
+                        <div class="column">
+                          <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+                        </div>
+
+                        <div class="column">
+                          <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+                        </div>
+
+                        <div class="column">
+                          <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+                        </div>
+                      </div>
+                    </div>
+                <!-- <div class="blocks">
+                        <div class="gridItem">
+                            <a href="stakeholderMap">Stakeholder Mapping</a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="futures">Where We Stand</a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="crazy8s">Crazy 8s</a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="visoning">Visioning</a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="storyBoard">Story-Boarding</a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="coDesign">Co-Design</a>
+                        </div>
+                </div> -->
+        </section>
+
+        <section class="findings">
+            <p class="subHeading" id="subHFind">Key Findings</p>
+            <p class="textF">Testing storyboards led to the insight that promary caretakers and not the hospital who would be responsible for helping someone with medical needs prepare for a storm. That became the key to both the preparation feature on our app, and the concept of pitching the app towards caregivers.</p>
+        </section>
+
+        <!-- Evaluative -->
+        <section id="evaluative">
+            <p class="heading">Will It Help? (Evaluative Research)</p>
+                <p class="text">User testing was conducted both on-site and remotely in Florida, as well as in Pittsburgh (using a severe winter storm as the test case instead of a hurricane). People with medical needs as well as caregivers for people with medical needs comprised the vast majority of our test subjects.</p>
+
+                    <!-- Images used to open the lightbox -->
+                    <div class="row">
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                      </div>
+                      <div class="column">
+                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                      </div>
+                    </div>
+
+                    <!-- The Modal/Lightbox -->
+                    <div id="myModal" class="modal">
+                      <span class="close cursor" onclick="closeModal()">&times;</span>
+                      <div class="modal-content">
+
+                        <div class="mySlides">
+                          <div class="numbertext">1 / 4</div>
+                          <img src="images/" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                          <div class="numbertext">2 / 4</div>
+                          <img src="images/" style="width:100%">
+                        </div>
+
+                        <!-- Next/previous controls -->
+                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                          <p id="caption"></p>
+                        </div>
+
+                        <!-- Thumbnail image controls -->
+                        <div class="column">
+                          <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+                        </div>
+
+                        <div class="column">
+                          <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+                        </div>
+
+                      </div>
+                    </div>
+                <!-- <div class="blocks">
+                        <div class="gridItem">
+                            <a href="userFla">User Testing: Florida</a>
+                        </div>
+                        <div class="gridItem">
+                            <a href="userPit">User Testing: Pittsburgh</a>
+                        </div>
+                </div> -->
+        </section>
+
+        <section class="findings">
+            <p class="subHeading" id="subHFind">Key Findings</p>
+            <p class="textF">From user testing we learned that many elderly people are wary about giving their data to an app, that for some users coupons are greatly welcomed, whereas for others, they are a frivolous triviality, and that most users would want a clear explanation for why the app is recommending a specific course of action, or else, they would be unwilling to head it. All of these and more were taken into consideration as we further refined and iterated our app.</p>
+        </section>
+
+
+        <!-- javascript -->
+        <script type="text/javascript" src="js/lightbox.js"></script>
+        <script type="text/javascript" src="js/navbar.js"></script>
+    </body>
 </html>
