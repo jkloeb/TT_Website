@@ -30,7 +30,7 @@ header {
     float: center;
     width: 100%;
     display: center;
-    background-color: #171717;
+    background-color: #373737;
 }
 
 #navbar a {
@@ -127,7 +127,7 @@ section {
 
 /*********** BANNERS ************/
 .banner{
-    background-color: #171717;
+    background-color: #373737;
 }
 
 .bannerImage{
