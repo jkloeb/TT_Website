@@ -37,90 +37,96 @@
         <!-- Exploratory -->
         <section id="exploratory">
             <p class="heading">Navigating a Vast Domain (Exploratory Research)</p>
-                <p class="text">When we would begin a research phase, we turned to four exploratory research methods to better understand how people behave in disasters and why:</p>
+            <p class="text">When we would begin a research phase, we turned to four exploratory research methods to better understand how people behave in disasters and why:</p>
 
                     <!-- Images used to open the lightbox -->
-                    <div class="row">
-                      <div class="column">
-                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                      </div>
-                      <div class="column">
-                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
-                      </div>
-                      <div class="column">
-                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
-                      </div>
-                      <div class="column">
-                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
-                      </div>
+            <div class="row">
+                <div class="column">
+                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+            </div>
+
+                <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="row">
+                            <div class="columnT">
+                                <p class="insetTitle">Secondary Research</p>
+                                <p class="insetText">A comprehensive reading of literature, both academic and popular related, to a host of topics related to disasters.</p>
+                            </div>
+                            <div class="columnI">
+                                <div class="cardImg"> <img src="images/secondary.jpg" style="width:100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="row">
+                            <div class="columnT">
+                                <p class="insetTitle">Guerrilla Research</p>
+                                <p class="insetText">Quick and dirty interviews with people about their experiences with disasters, or what they think they would do in a disaster.</p>
+                            </div>
+                            <div class="columnI">
+                                <div class="cardImg"> <img src="images/grl.jpg" style="width:100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="row">
+                            <div class="columnT">
+                                <p class="insetTitle">Expert Interviews</p>
+                                <p class="insetText"> Detailed interviews, mostly over gchat with experts in the domain of disaster preparation and management.</p>
+                            </div>
+                            <div class="columnI">
+                                <div class="cardImg"> <img src="images/expert.jpg" style="width:100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="row">
+                            <div class="columnT">
+                                <p class="insetTitle">Surveys</p>
+                                <p class="insetText">Amazon MTurk surveys of how people handled and would handle disasters.</p>
+                            </div>
+                            <div class="columnI">
+                                <div class="cardImg"> <img src="images/mTurk.png" style="width:100%"></div>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- The Modal/Lightbox -->
-                    <div id="myModal" class="modal">
-                      <span class="close cursor" onclick="closeModal()">&times;</span>
-                      <div class="modal-content">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-                        <div class="mySlides">
-                          <div class="numbertext">1 / 4</div>
-                          <img src="images/" style="width:100%">
-                        </div>
+                    <!-- <div class="caption-container">
+                        <p id="caption"></p>
+                    </div> -->
 
-                        <div class="mySlides">
-                          <div class="numbertext">2 / 4</div>
-                          <img src="images/" style="width:100%">
-                        </div>
-
-                        <div class="mySlides">
-                          <div class="numbertext">3 / 4</div>
-                          <img src="images/" style="width:100%">
-                        </div>
-
-                        <div class="mySlides">
-                          <div class="numbertext">4 / 4</div>
-                          <img src="images/" style="width:100%">
-                        </div>
-
-                        <!-- Next/previous controls -->
-                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-
-                        <!-- Caption text -->
-                        <div class="caption-container">
-                          <p id="caption"></p>
-                        </div>
-
-                        <!-- Thumbnail image controls -->
-                        <div class="column">
-                          <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="">
-                        </div>
-
-                        <div class="column">
-                          <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="">
-                        </div>
-
-                        <div class="column">
-                          <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="">
-                        </div>
-
-                        <div class="column">
-                          <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="">
-                        </div>
-                      </div>
+                    <!-- Thumbnail image controls -->
+                    <!-- <div class="column">
+                        <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Secondary Research">
                     </div>
-                <!-- <div class="blocks">
-                        <div class="gridItem">
-                            <a href="secondary">Secondary Research</a>
-                        </div>
-                        <div class="gridItem">
-                            <a href="guerrilla">Guerrilla Research</a>
-                        </div>
-                        <div class="gridItem">
-                            <a href="expert">Expert Interviews</a>
-                        </div>
-                        <div class="gridItem">
-                            <a href="survey">Surveys</a>
-                        </div>
-                </div> -->
+                    <div class="column">
+                        <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Guerrilla Research">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Expert Interviews">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Surveys">
+                    </div> -->
+                </div>
+            </div>
         </section>
 
         <section class="findings">
@@ -134,112 +140,158 @@
         <!-- Generative -->
         <section id="generative">
             <p class="heading">Designing with Ideas (Generative Research)</p>
-                <p class="text">From exploratory research we had to generate actual solutions that could help people and institutions in disasters. For this, we turned to a number of generative research methods:</p>
+            <p class="text">From exploratory research we had to generate actual solutions that could help people and institutions in disasters. For this, we turned to a number of generative research methods:</p>
 
-                    <!-- Images used to open the lightbox -->
-                    <div class="row">
-                      <div class="column">
-                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                      </div>
-                      <div class="column">
-                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
-                      </div>
-                      <div class="column">
-                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
-                      </div>
-                      <div class="column">
-                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
-                      </div>
-                      <div class="column">
-                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
-                      </div>
-                      <div class="column">
-                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
-                      </div>
+            <!-- Images used to open the lightbox -->
+            <div class="row">
+                <div class="column">
+                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal2();currentSlide2(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal2();currentSlide2(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal2();currentSlide2(3)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal2();currentSlide2(4)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal2();currentSlide2(5)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal2();currentSlide2(6)" class="hover-shadow">
+                </div>
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal2" class="modal">
+                <span class="close cursor" onclick="closeModal2()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides2">
+                        <div class="row">
+                            <div class="columnT">
+                                <p class="insetTitle">Stakeholder Map</p>
+                                <p class="insetText"></p>
+                            </div>
+                            <div class="columnI">
+                                <div class="cardImg"> <img src="images/stakerholdermap.png" style="width:100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides2">
+                        <div class="row">
+                            <div class="columnT">
+                                <p class="insetTitle">Crazy 8s/HMW</p>
+                                <p class="insetText"></p>
+                            </div>
+                            <div class="columnI">
+                                <div class="cardImg"> <img src="images/crazy8s.JPG" style="width:100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides2">
+                        <div class="row">
+                            <div class="columnT">
+                                <p class="insetTitle">Where We Stand</p>
+                                <p class="insetText"></p>
+                            </div>
+                            <div class="columnI">
+                                <div class="cardImg"> <img src="images/futures.JPG" style="width:100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides2">
+                        <div class="row">
+                            <div class="columnT">
+                                <p class="insetTitle">Visioning</p>
+                                <p class="insetText"></p>
+                            </div>
+                            <div class="columnI">
+                                <div class="cardImg"> <img src="images/visioning.JPG" style="width:100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides2">
+                        <div class="row">
+                            <div class="columnT">
+                                <p class="insetTitle">Story-Boarding</p>
+                                <p class="insetText"></p>
+                            </div>
+                            <div class="columnI">
+                                <div class="cardImg"> <img src="images/storyboards/Redirection revised - 28May.jpg" style="width:100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides2">
+                        <div class="row">
+                            <div class="columnT">
+                                <p class="insetTitle">Co-Design</p>
+                                <p class="insetText"></p>
+                            </div>
+                            <div class="columnI">
+                                <div class="cardImg"> <img src="images/coDesign.JPG" style="width:100%"></div>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- The Modal/Lightbox -->
-                    <div id="myModal" class="modal">
-                      <span class="close cursor" onclick="closeModal()">&times;</span>
-                      <div class="modal-content">
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
 
-                        <div class="mySlides">
-                          <div class="numbertext">1 / 4</div>
-                          <img src="images/" style="width:100%">
-                        </div>
-
-                        <div class="mySlides">
-                          <div class="numbertext">2 / 4</div>
-                          <img src="images/" style="width:100%">
-                        </div>
-
-                        <div class="mySlides">
-                          <div class="numbertext">3 / 4</div>
-                          <img src="images/" style="width:100%">
-                        </div>
-
-                        <div class="mySlides">
-                          <div class="numbertext">4 / 4</div>
-                          <img src="images/" style="width:100%">
-                        </div>
-
-                        <div class="mySlides">
-                          <div class="numbertext">5 / 5</div>
-                          <img src="images/" style="width:100%">
-                        </div>
-
-                        <div class="mySlides">
-                          <div class="numbertext">5 / 5</div>
-                          <img src="images/" style="width:100%">
-                        </div>
-
-                        <!-- Next/previous controls -->
-                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-
-                        <!-- Caption text -->
-                        <div class="caption-container">
-                          <p id="caption"></p>
-                        </div>
-
-                        <!-- Thumbnail image controls -->
-                        <div class="column">
-                          <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="">
-                        </div>
-
-                        <div class="column">
-                          <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="">
-                        </div>
-
-                        <div class="column">
-                          <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="">
-                        </div>
-
-                        <div class="column">
-                          <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="">
-                        </div>
-                      </div>
+                    <!--
+                    <div class="mySlides2">
+                        <div class="insetTitle"></div>
+                        <div class="insetText"></div>
+                        <img src="images/stakerholdermap.png" style="width:100%">
                     </div>
-                <!-- <div class="blocks">
-                        <div class="gridItem">
-                            <a href="stakeholderMap">Stakeholder Mapping</a>
-                        </div>
-                        <div class="gridItem">
-                            <a href="futures">Where We Stand</a>
-                        </div>
-                        <div class="gridItem">
-                            <a href="crazy8s">Crazy 8s</a>
-                        </div>
-                        <div class="gridItem">
-                            <a href="visoning">Visioning</a>
-                        </div>
-                        <div class="gridItem">
-                            <a href="storyBoard">Story-Boarding</a>
-                        </div>
-                        <div class="gridItem">
-                            <a href="coDesign">Co-Design</a>
-                        </div>
-                </div> -->
+                    <div class="mySlides2">
+                        <div class="insetTitle"></div>
+                        <div class="insetText"></div>
+                        <img src="images/x.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <div class="insetTitle"></div>
+                        <div class="insetText"></div>
+                        <img src="images/" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <div class="insetTitle"></div>
+                        <div class="insetText"></div>
+                        <img src="images/" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <div class="insetTitle"></div>
+                        <div class="insetText"></div>
+                        <img src="images/" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <div class="insetTitle"></div>
+                        <div class="insetText"></div>
+                        <img src="images/" style="width:100%">
+                    </div> -->
+
+                    <!-- Thumbnail image controls -->
+                    <!-- <div class="column">
+                        <img class="demo" src="img1.jpg" onclick="currentSlide2(1)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="img2.jpg" onclick="currentSlide2(2)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="img3.jpg" onclick="currentSlide2(3)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="img4.jpg" onclick="currentSlide2(4)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="img3.jpg" onclick="currentSlide2(5)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="img4.jpg" onclick="currentSlide2(6)" alt="">
+                    </div> -->
+                </div>
+            </div>
         </section>
 
         <section class="findings">
@@ -250,61 +302,69 @@
         <!-- Evaluative -->
         <section id="evaluative">
             <p class="heading">Will It Help? (Evaluative Research)</p>
-                <p class="text">User testing was conducted both on-site and remotely in Florida, as well as in Pittsburgh (using a severe winter storm as the test case instead of a hurricane). People with medical needs as well as caregivers for people with medical needs comprised the vast majority of our test subjects.</p>
+            <p class="text">User testing was conducted both on-site and remotely in Florida, as well as in Pittsburgh (using a severe winter storm as the test case instead of a hurricane). People with medical needs as well as caregivers for people with medical needs comprised the vast majority of our test subjects.</p>
 
-                    <!-- Images used to open the lightbox -->
-                    <div class="row">
-                      <div class="column">
-                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                      </div>
-                      <div class="column">
-                        <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
-                      </div>
-                    </div>
+            <!-- Images used to open the lightbox -->
+            <div class="row">
+                <div class="column">
+                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal3();currentSlide3(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal3();currentSlide3(2)" class="hover-shadow">
+                </div>
+            </div>
 
                     <!-- The Modal/Lightbox -->
-                    <div id="myModal" class="modal">
-                      <span class="close cursor" onclick="closeModal()">&times;</span>
-                      <div class="modal-content">
-
-                        <div class="mySlides">
-                          <div class="numbertext">1 / 4</div>
-                          <img src="images/" style="width:100%">
+            <div id="myModal3" class="modal">
+                <span class="close cursor" onclick="closeModal3()">&times;</span>
+                <div class="modal-content3">
+                    <div class="mySlides3">
+                        <div class="row">
+                            <div class="columnT">
+                                <p class="insetTitle">User Testing: Florida</p>
+                                <p class="insetText"></p>
+                            </div>
+                            <div class="columnI">
+                                <div class="cardImg"> <img src="images/userTesting2.jpg" style="width:100%"></div>
+                            </div>
                         </div>
-
-                        <div class="mySlides">
-                          <div class="numbertext">2 / 4</div>
-                          <img src="images/" style="width:100%">
-                        </div>
-
-                        <!-- Next/previous controls -->
-                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-
-                        <!-- Caption text -->
-                        <div class="caption-container">
-                          <p id="caption"></p>
-                        </div>
-
-                        <!-- Thumbnail image controls -->
-                        <div class="column">
-                          <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="">
-                        </div>
-
-                        <div class="column">
-                          <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="">
-                        </div>
-
-                      </div>
                     </div>
-                <!-- <div class="blocks">
-                        <div class="gridItem">
-                            <a href="userFla">User Testing: Florida</a>
+                    <div class="mySlides3">
+                        <div class="row">
+                            <div class="columnT">
+                                <p class="insetTitle">User Testing: Pittsburgh</p>
+                                <p class="insetText"></p>
+                            </div>
+                            <div class="columnI">
+                                <div class="cardImg"> <img src="images/userTesting1.jpg" style="width:100%"></div>
+                            </div>
                         </div>
-                        <div class="gridItem">
-                            <a href="userPit">User Testing: Pittsburgh</a>
-                        </div>
-                </div> -->
+                    </div>
+
+                    <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+
+                    <!--
+                    <div class="mySlides3">
+                        <div class="insetTitle"></div>
+                        <div class="insetText"></div>
+                        <img src="images/userTesting2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <div class="insetTitle">User Testing: Pittsburgh</div>
+                        <div class="insetText"></div>
+                        <img src="images/userTesting1.jpg" style="width:100%">
+                    </div> -->
+
+                    <!-- Thumbnail image controls -->
+                    <!-- <div class="column">
+                        <img class="demo" src="img1.jpg" onclick="currentSlide3(1)" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="img2.jpg" onclick="currentSlide3(2)" alt="">
+                    </div> -->
+                </div>
+            </div>
         </section>
 
         <section class="findings">
@@ -315,6 +375,10 @@
 
         <!-- javascript -->
         <script type="text/javascript" src="js/lightbox.js"></script>
+        <script type="text/javascript" src="js/lightbox2.js"></script>
+        <script type="text/javascript" src="js/lightbox3.js"></script>
         <script type="text/javascript" src="js/navbar.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/scroll.js"></script>
     </body>
 </html>
