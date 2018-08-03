@@ -32,7 +32,11 @@
         </section>
 
         <!-- Break Banner -->
-        <div class="banner"><video class="bannerImage" id="affVid" src="videos/affinity_timelapse.mp4" type="video/mp4" alt="Collecting and analyzing our exploratory data through Affinity Diagramming."/></div>
+        <div class="banner">
+            <video class="bannerImage" controls/>
+                <source src="videos/affinity_timelapse.mp4" type="video/mp4"/>
+            </video>
+        </div>
 
         <!-- Exploratory -->
         <section id="exploratory">
@@ -42,16 +46,28 @@
                     <!-- Images used to open the lightbox -->
             <div class="row">
                 <div class="column">
-                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    <div class="blockCont" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                        <div class="blockText">Secondary Research</div>
+                        <img class="blocks" src="images/blocks/secondary box@2x.png">
+                    </div>
                 </div>
                 <div class="column">
-                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    <div class="blockCont" onclick="openModal();currentSlide(2)" class=>
+                        <div class="blockText">Guerrilla Research</div>
+                        <img class="blocks" src="images/blocks/guerrilla box@2x.png""hover-shadow">
+                    </div>
                 </div>
                 <div class="column">
-                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    <div class="blockCont" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                        <div class="blockText">Expert Interviews</div>
+                        <img class="blocks" src="images/blocks/expert box@2x.png">
+                    </div>
                 </div>
                 <div class="column">
-                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                    <div class="blockCont" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                        <div class="blockText">Surveys</div>
+                        <img class="blocks" src="images/blocks/mturk box@2x.png">
+                    </div>
                 </div>
             </div>
 
@@ -145,22 +161,40 @@
             <!-- Images used to open the lightbox -->
             <div class="row">
                 <div class="column">
-                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal2();currentSlide2(1)" class="hover-shadow">
+                    <div class="blockCont" onclick="openModal2();currentSlide2(1)" class="hover-shadow">
+                        <div class="blockText">Stakeholder Mapping</div>
+                        <img class="blocks" src="images/blocks/stkhldr box@2x.png">
+                    </div>
                 </div>
                 <div class="column">
-                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal2();currentSlide2(2)" class="hover-shadow">
+                    <div class="blockCont" onclick="openModal2();currentSlide2(2)" class="hover-shadow">
+                        <div class="blockText">How Might We & Crazy 8s</div>
+                        <img class="blocks" src="images/blocks/c8 box@2x.png">
+                    </div>
                 </div>
                 <div class="column">
-                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal2();currentSlide2(3)" class="hover-shadow">
+                    <div class="blockCont" onclick="openModal2();currentSlide2(3)" class="hover-shadow">
+                        <div class="blockText">Where We Stand</div>
+                        <img class="blocks" src="images/blocks/futures box@2x.png">
+                    </div>
                 </div>
                 <div class="column">
-                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal2();currentSlide2(4)" class="hover-shadow">
+                    <div class="blockCont" onclick="openModal2();currentSlide2(4)" class="hover-shadow">
+                        <div class="blockText">Visioning</div>
+                        <img class="blocks" src="images/blocks/vision box@2x.png">
+                    </div>
                 </div>
                 <div class="column">
-                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal2();currentSlide2(5)" class="hover-shadow">
+                    <div class="blockCont" onclick="openModal2();currentSlide2(5)" class="hover-shadow">
+                        <div class="blockText">Storyboarding</div>
+                        <img class="blocks" src="images/blocks/storyBoard box@2x.png">
+                    </div>
                 </div>
                 <div class="column">
-                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal2();currentSlide2(6)" class="hover-shadow">
+                    <div class="blockCont" onclick="openModal2();currentSlide2(6)" class="hover-shadow">
+                        <div class="blockText">Co-Design</div>
+                        <img class="blocks" src="images/blocks/coDes box@2x.png">
+                    </div>
                 </div>
             </div>
 
@@ -183,7 +217,7 @@
                     <div class="mySlides2">
                         <div class="row">
                             <div class="columnT">
-                                <p class="insetTitle">Crazy 8s/HMW</p>
+                                <p class="insetTitle">HMW/Crazy 8s</p>
                                 <p class="insetText"></p>
                             </div>
                             <div class="columnI">
@@ -296,7 +330,7 @@
 
         <section class="findings">
             <p class="subHeading" id="subHFind">Key Findings</p>
-            <p class="textF">Testing storyboards led to the insight that promary caretakers and not the hospital who would be responsible for helping someone with medical needs prepare for a storm. That became the key to both the preparation feature on our app, and the concept of pitching the app towards caregivers.</p>
+            <p class="textF">Testing storyboards led to the insight that primary caretakers and not the hospital who would be responsible for helping someone with medical needs prepare for a storm. That became the key to both the preparation feature on our app, and the concept of pitching the app towards caregivers.</p>
         </section>
 
         <!-- Evaluative -->
@@ -307,10 +341,16 @@
             <!-- Images used to open the lightbox -->
             <div class="row">
                 <div class="column">
-                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal3();currentSlide3(1)" class="hover-shadow">
+                    <div class="blockCont" onclick="openModal3();currentSlide3(1)" class="hover-shadow">
+                        <div class="blockText">User Testing: Florida</div>
+                        <img class="blocks" src="images/blocks/fla box@2x.png">
+                    </div>
                 </div>
                 <div class="column">
-                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal3();currentSlide3(2)" class="hover-shadow">
+                    <div class="blockCont" onclick="openModal3();currentSlide3(2)" class="hover-shadow">
+                        <div class="blockText">User Testing: Pittsburgh</div>
+                        <img class="blocks" src="images/blocks/pitt box@2x.png">
+                    </div>
                 </div>
             </div>
 

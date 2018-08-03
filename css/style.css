@@ -14,7 +14,7 @@ header {
 
 #headerID {
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2rem;
     padding-left: 10%;
 }
 
@@ -31,17 +31,18 @@ header {
     width: 100%;
     display: center;
     background-color: #373737;
+    z-index: 1;
 }
 
 #navbar a {
     display: inline-block;
     border: none;
     color: white;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: center;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125rem;
     width: 20%;
 }
 
@@ -57,7 +58,7 @@ header {
 
 /* Page content */
 .content {
-  padding: 16px;
+  padding: 1rem;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -69,45 +70,42 @@ header {
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-  padding-top: 60px;
+  padding-top: 3.75rem;
 }
 
 
 /*********** ALL BODY ************/
 section {
+    position: relative;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 15px;
-    padding-bottom: 30px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .heading {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 .subHeading {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
 .text {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
-    letter-spacing: .75px;
-    line-height: 1.65;
+    letter-spacing: 0.046875rem;
+    line-height: 1.65em;
     padding-right: 45%;
-}
-
-.blockList {
-    display: grid;
 }
 
 
 /*********** LINKS ************/
 .pageSections a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     cursor: pointer;
 }
@@ -127,6 +125,7 @@ section {
 
 /*********** BANNERS ************/
 .banner{
+    position: relative;
     background-color: #C9C9C9;
 }
 
@@ -144,15 +143,16 @@ section {
 
 /*********** FINDINGS SECTIONS ************/
 .findings{
+    position: relative;
     background-color: #0D47EA;
 }
 
 .textF {
     color: #F8F8F8;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
-    letter-spacing: .75px;
-    line-height: 1.65;
+    letter-spacing: 0.046875rem;
+    line-height: 1.65rem;
     padding-right: 45%;
 }
 
@@ -160,7 +160,7 @@ section {
     color: white;
 }
 
-
+/*
 
 
 
@@ -177,9 +177,9 @@ section {
 }
 
 li {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 200;
-    margin: 8px;
+    margin: .5rem;
 }
 
 #gifApp{
@@ -205,7 +205,7 @@ li {
 #stakeholderMap{
     width: 65%;
 }
-
+*/
 
 /*********** ABOUT ************/
 #team {
@@ -227,12 +227,12 @@ li {
 
 .bio {
     padding-left: 0;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
 }
 
 .bio a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     cursor: pointer;
 }
@@ -251,11 +251,27 @@ li {
 
 
 /*********** LIGHTBOX ************/
-.blocks{
+.blockCont{
+    position: relative;
     width: 80%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     cursor: pointer;
+}
+
+.blocks{
+    width: 100%;
+}
+
+.blockText{
+    position: absolute;
+    color: #f8f8f8;
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2.5rem;
 }
 
 .row > .column {
@@ -278,14 +294,14 @@ li {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     padding-top: 5%;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: #f8f8f8;
+    background-color: rgba(55,55,55, 0.99)
 }
 
 /* Modal Content */
@@ -300,55 +316,63 @@ li {
 
 /* The Close Button */
 .close {
-  color: black;
-  position: absolute;
-  top: 1%;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
+    color: #f8f8f8;
+    position: absolute;
+    top: 1%;
+    right: 1.5625rem;
+    font-size: 2.25rem;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #0D47EA;
-  text-decoration: none;
-  cursor: pointer;
+    color: #0D47EA;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .columnT {
-  float: left;
-  width: 38%;
+    float: left;
+    width: 35%;
 }
 
 .columnI {
-  float: left;
-  width: 62%;
+    float: left;
+    width: 65%;
 }
 
 /* Inset title */
 .insetTitle {
-  color: black;
-  background-color: #f8f8f8;
-  font-size: 24px;
-  padding-left: 10%;
-  padding-right: 10%;
+    color: #f8f8f8;
+    background-color: rgba(55,55,55, 0.95);
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 10%;
 }
 
 /* Inset text */
 .insetText {
-  color: black;
-  background-color: #f8f8f8;
-  font-size: 18px;
-  padding-left: 10%;
-  padding-right: 10%;
+    color: #f8f8f8;
+    background-color: rgba(55,55,55, 0.95);
+    font-size: 1.125rem;
+    padding-left: 3rem;
+    padding-right: 10%;
 }
 
 /* Hide the slides by default */
 .cardImg {
-  position: relative;
-  background-color: #f8f8f8;
-  margin: auto;
-  max-width: 1000px;
+    position: relative;
+    background-color: rgba(55,55,55, 0.99);
+    margin: auto;
+    padding-right: 5%;
+}
+
+.cardImg2 {
+    position: relative;
+    background-color: rgba(55,55,55, 0.99);
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 /* Next & previous buttons */
@@ -358,11 +382,11 @@ li {
   position: absolute;
   top: 35%;
   width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: black;
+  padding: 1rem;
+  margin-top: -3.125rem;
+  color: #f8f8f8;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
@@ -371,16 +395,17 @@ li {
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0.1875rem 0 0 0.1875rem;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(55, 55, 55, 0.35);
+    color: #0D47EA;
+    background-color: rgba(248,248,248, 0.75);
 }
 
-/* Caption text */
+/* Caption text
 .caption-container {
     position: left;
     text-align: left;
@@ -396,14 +421,13 @@ img.demo {
 .active,
 .demo:hover {
   opacity: 1;
-}
+} */
 
-img.hover-shadow {
+.blocks hover-shadow {
   transition: 0.3s;
 }
 
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.blocks:hover {
 }
 
 
@@ -418,9 +442,9 @@ section {
 }
 
 
+/*********** SMALLER BREAK POINT ************/
+
 
 /*********** SMALLEST BREAK POINT ************/
 
-/*********** SMALLER BREAK POINT ************/
 
-/*********** LARGER BREAK POINT ************/
