@@ -12,14 +12,8 @@ body {
 header {
 }
 
-#headerID {
-    font-weight: 500;
-    font-size: 2rem;
-    padding-left: 10%;
-}
-
-#pinkBar {
-    width: 380px;
+#headerImg {
+    max-width: 100%;
 }
 
 
@@ -274,6 +268,13 @@ li {
     margin-right: 2.5rem;
 }
 
+.blocks hover-shadow {
+  transition: 0.3s;
+}
+
+.blocks:hover {
+}
+
 .row > .column {
     padding: 0 0px;
 }
@@ -422,13 +423,6 @@ img.demo {
 .demo:hover {
   opacity: 1;
 } */
-
-.blocks hover-shadow {
-  transition: 0.3s;
-}
-
-.blocks:hover {
-}
 
 
 /*********** SCROLL ************/

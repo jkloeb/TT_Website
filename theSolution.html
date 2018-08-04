@@ -8,14 +8,7 @@
 
     <body>
         <header>
-            <div id="headerID">
-                <p>TEAM TELETRACKING</p>
-
-                <!-- Pink Bar -->
-                <p><img id="pinkBar" src="images/pinkBar.png"/></p>
-
-                <p>Our Solution</p>
-            </div>
+            <img id="headerImg" src="images/headers/solution.jpg"/>
         </header>
 
         <!-- Nav Bar -->
@@ -29,8 +22,8 @@
         <section class="pageSections">
             <p class="text">The solution contains three key components:</p>
             <p><a href="#theMobileApp">The Mobile Application</a><p>
-            <p><a href="#servicePlan">A Service Plan & Future Roadmap</a></p><!--
-            <p><a href="#roadmap">A Future Roadmap</a></p> -->
+            <p><a href="#servicePlan">The Service Plan</a></p>
+            <p><a href="#roadmap">A Feature Roadmap</a></p>
         </section>
 
         <!-- Break Banner -->
@@ -41,30 +34,29 @@
             <p class="heading">The Mobile Application: Haven</p>
             <p class="text">The heart of the solution, Haven helps citizens prepare for disasters, both in terms of material and logistics. To this end, there are four core features that facilate and nudge responsible citizen behaviours:</p>
 
-            <!-- Images used to open the lightbox -->
             <div class="row">
                 <div class="column">
                     <div class="blockCont" onclick="openModal4();currentSlide4(1)" class="hover-shadow">
                         <div class="blockText">Onboarding</div>
-                        <img class="blocks" src="images/blocks/blank.png">
+                        <img class="blocks" src="images/blocks/onB box@2x.png">
                     </div>
                 </div>
                 <div class="column">
                     <div class="blockCont" onclick="openModal4();currentSlide4(5)" class="hover-shadow">
                         <div class="blockText">Preparation</div>
-                        <img class="blocks" src="images/blocks/blank.png">
+                        <img class="blocks" src="images/blocks/prep box@2x.png">
                     </div>
                 </div>
                 <div class="column">
                     <div class="blockCont" onclick="openModal4();currentSlide4(9)" class="hover-shadow">
                         <div class="blockText">Registration</div>
-                        <img class="blocks" src="images/blocks/blank.png">
+                        <img class="blocks" src="images/blocks/reg box@2x.png">
                     </div>
                 </div>
                 <div class="column">
                     <div class="blockCont" onclick="openModal4();currentSlide4(13)" class="hover-shadow">
                         <div class="blockText">Evacuation</div>
-                        <img class="blocks" src="images/blocks/blank.png">
+                        <img class="blocks" src="images/blocks/evac box@2x.png">
                     </div>
                 </div>
             </div>
@@ -255,28 +247,6 @@
 
                 <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides4(1)">&#10095;</a>
-
-                <!-- Caption text -->
-                <!-- <div class="caption-container">
-                    <p id="caption"></p>
-                </div> -->
-
-                <!-- Thumbnail image controls -->
-                <!-- <div class="column">
-                    <img class="demo" src="img1.jpg" onclick="currentSlide4(1)" alt="">
-                </div>
-
-                <div class="column">
-                    <img class="demo" src="img2.jpg" onclick="currentSlide4(2)" alt="">
-                </div>
-
-                <div class="column">
-                    <img class="demo" src="img3.jpg" onclick="currentSlide4(3)" alt="">
-                </div>
-
-                <div class="column">
-                    <img class="demo" src="img4.jpg" onclick="currentSlide4(4)" alt="">
-                </div> -->
             </div>
         </div>
 </section>
@@ -288,11 +258,9 @@
 
         <!-- Service Plan -->
         <section id="servicePlan">
-            <p class="heading">Service Plan & Roadmap</p>
-            <p class="text">Alongside the Haven app, we are providing our client, Teletracking, with a service plan for data collection. While the app is intended to direct people away from hospitals in disasters, there is more that can be done to help hospitals in these critical situations. Below are some diagrams of the kind of data our app will be collecting and how that data can aid hospitals in better managing their operations during natural disasters. For the future expansion of the Sheltr app and service we’ve prepared a roadmap for Teletracking. It’s obviously not meant to be followed to the letter, but it should suggest useful avenues to pursue in the future.</p>
+            <p class="heading">Service Plan</p>
+            <p class="text">Alongside the Haven app, we are providing our client, Teletracking, with a service plan for data collection. While the app is intended to direct people away from hospitals in disasters, there is more that can be done to help hospitals in these critical situations. Below are some diagrams of the kind of data our app will be collecting and how that data can aid hospitals in better managing their operations during natural disasters.</p>
 
-
-            <!-- Images used to open the lightbox -->
             <div class="row">
                 <div class="column">
                     <div class="blockCont" onclick="openModal5();currentSlide5(1)" class="hover-shadow">
@@ -301,47 +269,36 @@
                     </div>
                 </div>
                 <div class="column">
-                    <div class="blockCont" onclick="openModal5();currentSlide5(2)" class="hover-shadow">
-                        <div class="blockText">Roadmap</div>
-                        <img class="blocks" src="images/blocks/roadmap box@2x.png">
+                    <div class="blockCont" onclick="openModal5();currentSlide5(4)" class="hover-shadow">
+                        <div class="blockText">Data Model</div>
+                        <img class="blocks" src="images/blocks/data box@2x.png">
                     </div>
                 </div>
             </div>
 
-                    <!-- The Modal/Lightbox -->
             <div id="myModal5" class="modal">
                 <span class="close cursor" onclick="closeModal5()">&times;</span>
 
                 <div class="modal-content5">
                     <div class="mySlides5">
-                        <div class="cardImg2"> <img src="images/Data Flow v3.jpg" style="width:100%"></div>
+                        <p class="insetTitle">Service Plan, pt. 1</p>
+                        <div class="cardImg2"><img src="images/Service plan1.jpg" style="width:100%"></div>
                     </div>
                     <div class="mySlides5">
-                        <div class="cardImg2"> <img src="images/Feature Roadmap v4.jpg" style="width:100%"></div>
+                        <p class="insetTitle">Service Plan, pt. 2</p>
+                        <div class="cardImg2"><img src="images/Service plan2.jpg" style="width:100%"></div>
                     </div>
-<!--
+                    <div class="mySlides5">
+                        <p class="insetTitle">Service Plan, pt. 3</p>
+                        <div class="cardImg2"><img src="images/Service plan3.jpg" style="width:100%"></div>
+                    </div>
+                    <div class="mySlides5">
+                        <p class="insetTitle">Data Model</p>
+                        <div class="cardImg2"><img src="images/V4.jpg" style="width:100%"></div>
+                    </div>
+
                     <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides5(1)">&#10095;</a> -->
-
-                    <!--
-                    <div class="mySlides3">
-                        <div class="insetTitle"></div>
-                        <div class="insetText"></div>
-                        <img src="images/userTesting2.jpg" style="width:100%">
-                    </div>
-                    <div class="mySlides3">
-                        <div class="insetTitle">User Testing: Pittsburgh</div>
-                        <div class="insetText"></div>
-                        <img src="images/userTesting1.jpg" style="width:100%">
-                    </div> -->
-
-                    <!-- Thumbnail image controls -->
-                    <!-- <div class="column">
-                        <img class="demo" src="img1.jpg" onclick="currentSlide3(1)" alt="">
-                    </div>
-                    <div class="column">
-                        <img class="demo" src="img2.jpg" onclick="currentSlide3(2)" alt="">
-                    </div> -->
+                    <a class="next" onclick="plusSlides5(1)">&#10095;</a>
                 </div>
             </div>
         </section>
@@ -351,70 +308,28 @@
             <p class="textF">Data collection text.</p>
         </section>
 
-        <!-- Roadmap
-        <section id="roadmap">
-            <p class="heading">Future Roadmap</p>
-            <p class="text"></p>
 
-            mages used to open the lightbox
+        <!-- Roadmap -->
+        <section id="roadmap">
+            <p class="heading">Feature Roadmap</p>
+            <p class="text"> For the future expansion of the Sheltr app and service we’ve prepared a roadmap for Teletracking. It’s obviously not meant to be followed to the letter, but it should suggest useful avenues to pursue in the future.</p>
+
             <div class="row">
                 <div class="column">
-                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal6();currentSlide6(1)" class="hover-shadow">
+                    <div class="blockCont" onclick="openModal6();currentSlide6(1)" class="hover-shadow">
+                        <div class="blockText">Roadmap</div>
+                        <img class="blocks" src="images/blocks/roadmap box@2x.png">
+                    </div>
                 </div>
-                <div class="column">
-                    <img class="blocks" src="images/blocks/blank.png" onclick="openModal6();currentSlide6(2)" class="hover-shadow">
-                </div>
-            </div>  -->
+            </div>
 
-                    <!-- The Modal/Lightbox -->
-
-                    <!-- <div id="myModal6" class="modal">
+            <div id="myModal6" class="modal">
                 <span class="close cursor" onclick="closeModal6()">&times;</span>
 
                 <div class="modal-content6">
                     <div class="mySlides6">
-                        <div class="row">
-                            <div class="columnT">
-                                <p class="insetTitle">User Testing: Florida</p>
-                                <p class="insetText"></p>
-                            </div>
-                            <div class="columnI">
-                                <div class="cardImg"> <img src="images/" style="width:100%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mySlides6">
-                        <div class="row">
-                            <div class="columnT">
-                                <p class="insetTitle">User Testing: Pittsburgh</p>
-                                <p class="insetText"></p>
-                            </div>
-                            <div class="columnI">
-                                <div class="cardImg"> <img src="images/" style="width:100%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides6(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides6(1)">&#10095;</a>
-
-                    <div class="mySlides3">
-                        <div class="insetTitle"></div>
-                        <div class="insetText"></div>
-                        <img src="images/userTesting2.jpg" style="width:100%">
-                    </div>
-                    <div class="mySlides3">
-                        <div class="insetTitle">User Testing: Pittsburgh</div>
-                        <div class="insetText"></div>
-                        <img src="images/userTesting1.jpg" style="width:100%">
-                    </div> -->
-
-                    <!-- Thumbnail image controls -->
-                    <!-- <div class="column">
-                        <img class="demo" src="img1.jpg" onclick="currentSlide3(1)" alt="">
-                    </div>
-                    <div class="column">
-                        <img class="demo" src="img2.jpg" onclick="currentSlide3(2)" alt="">
+                        <p class="insetTitle">Feature Roadmap</p>
+                        <div class="cardImg2"><img src="images/roadmap@2x.png" style="width:100%; align-content: center;"></div>
                     </div>
                 </div>
             </div>
@@ -423,7 +338,7 @@
         <section class="findings">
             <p class="subHeading" id="subHFind">Future Drivers</p>
             <p class="textF">Drivers text.</p>
-        </section>  -->
+        </section>
     </body>
 
         <!-- javascript -->
