@@ -55,16 +55,14 @@ header {
   padding: 1rem;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-  padding-top: 3.75rem;
+    padding-top: 3.75rem;
 }
 
 
@@ -155,9 +153,6 @@ section {
 }
 
 /*
-
-
-
 .titleWImage {
     display: inline;
 }
@@ -200,6 +195,7 @@ li {
     width: 65%;
 }
 */
+
 
 /*********** ABOUT ************/
 #team {
@@ -285,7 +281,7 @@ li {
     clear: both;
 }
 
-/* Create two equal columns that floats next to eachother */
+/* Create two equal columns that float next to eachother */
 .column {
     float: left;
     width: 35%;
@@ -305,7 +301,6 @@ li {
     background-color: rgba(55,55,55, 0.99)
 }
 
-/* Modal Content */
 .modal-content {/*
   position: relative;
   background-color: #f8f8f8;
@@ -315,7 +310,6 @@ li {
   max-width: 1000px;*/
 }
 
-/* The Close Button */
 .close {
     color: #f8f8f8;
     position: absolute;
@@ -342,7 +336,6 @@ li {
     width: 65%;
 }
 
-/* Inset title */
 .insetTitle {
     color: #f8f8f8;
     background-color: rgba(55,55,55, 0.95);
@@ -351,7 +344,6 @@ li {
     padding-right: 10%;
 }
 
-/* Inset text */
 .insetText {
     color: #f8f8f8;
     background-color: rgba(55,55,55, 0.95);
@@ -360,7 +352,6 @@ li {
     padding-right: 10%;
 }
 
-/* Hide the slides by default */
 .cardImg {
     position: relative;
     background-color: rgba(55,55,55, 0.99);
@@ -379,31 +370,29 @@ li {
 /* Next & previous buttons */
 .prev,
 .next {
-  cursor: pointer;
-  position: absolute;
-  top: 35%;
-  width: auto;
-  padding: 1rem;
-  margin-top: -3.125rem;
-  color: #f8f8f8;
-  font-weight: bold;
-  font-size: 1.25rem;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+      width: auto;
+      padding: 1rem;
+      margin-top: -3.125rem;
+      color: #f8f8f8;
+      font-weight: bold;
+      font-size: 1.25rem;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 0.1875rem 0 0 0.1875rem;
+      right: 0;
+      border-radius: 0.1875rem 0 0 0.1875rem;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    color: #0D47EA;
-    background-color: rgba(248,248,248, 0.75);
+    color: rgb(248,248,248);
+    background-color: rgba(13,71,234, 0.75);
 }
 
 /* Caption text
@@ -413,10 +402,6 @@ li {
     background-color: black;
     padding: 2px 16px;
     color: white;
-}
-
-img.demo {
-  opacity: 0.6;
 }
 
 .active,
@@ -437,8 +422,19 @@ section {
 
 
 /*********** SMALLER BREAK POINT ************/
+@media screen and (max-width: 770px){
+    .text{
+        padding-right: 0;
+    }
+
+    .textF{
+        padding-right: 0;
+    }
 
 
 /*********** SMALLEST BREAK POINT ************/
+
+
+/*********** LARGEST BREAK POINT ************/
 
 

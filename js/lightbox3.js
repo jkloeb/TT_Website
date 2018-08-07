@@ -6,8 +6,8 @@ function closeModal3() {
   document.getElementById('myModal3').style.display = "none";
 }
 
-var slideIndex = 1;
-showSlides3(slideIndex);
+// var slideIndex = 1;
+// showSlides3(slideIndex);
 
 function plusSlides3(n) {
   showSlides3(slideIndex += n);
@@ -31,6 +31,6 @@ function showSlides3(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  // dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }

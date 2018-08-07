@@ -6,8 +6,8 @@ function closeModal5() {
   document.getElementById('myModal5').style.display = "none";
 }
 
-var slideIndex = 1;
-showSlides5(slideIndex);
+// var slideIndex = 1;
+// showSlides5(slideIndex);
 
 function plusSlides5(n) {
   showSlides5(slideIndex += n);
@@ -31,6 +31,6 @@ function showSlides5(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  // dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
