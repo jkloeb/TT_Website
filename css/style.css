@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.09375rem;
     background-color: #F8F8F8;
 }
 
@@ -259,16 +259,9 @@ li {
     font-style: italic;
     font-size: 1.5rem;
     line-height: 2.5rem;
-    margin-top: 4rem;
-    margin-left: 2rem;
-    margin-right: 2.5rem;
-}
-
-.blocks hover-shadow {
-  transition: 0.3s;
-}
-
-.blocks:hover {
+    margin-top: 22%;
+    margin-left: 12%;
+    margin-right: 20%;
 }
 
 .row > .column {
@@ -423,13 +416,39 @@ section {
 
 /*********** SMALLER BREAK POINT ************/
 @media screen and (max-width: 770px){
+    body{
+        letter-spacing: 0.0625rem;
+    }
+
+    #navbar a{
+        width: 40%
+    }
+
     .text{
+        font-size: 1.1rem;
         padding-right: 0;
+        line-height: 1.4rem;
     }
 
     .textF{
+        font-size: 1.1rem;
         padding-right: 0;
+        line-height: 1.4rem;
     }
+
+    .column {
+        width: 50%;
+        padding-right: 5%
+    }
+
+    .blockText{
+        hyphens: auto;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin-top: 12.5%;
+    }
+
+}
 
 
 /*********** SMALLEST BREAK POINT ************/
