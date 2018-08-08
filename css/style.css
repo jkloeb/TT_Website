@@ -261,9 +261,19 @@ section {
     width: 35%;
 }
 
+.columnT2 {
+    float: left;
+    width: 50%;
+}
+
 .columnI {
     float: left;
     width: 65%;
+}
+
+.columnI2 {
+    float: left;
+    width: 50%;
 }
 
 .insetTitle {
@@ -281,6 +291,24 @@ section {
     font-size: 1.125rem;
     line-height: 1.5rem;
     padding-left: 3rem;
+    padding-right: 10%;
+}
+
+.insetTitle2 {
+    color: #f8f8f8;
+    background-color: rgba(55,55,55, 0.95);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding-left: 6rem;
+    padding-right: 10%;
+}
+
+.insetText2 {
+    color: #f8f8f8;
+    background-color: rgba(55,55,55, 0.95);
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    padding-left: 6rem;
     padding-right: 10%;
 }
 
