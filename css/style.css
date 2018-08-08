@@ -152,50 +152,6 @@ section {
     color: white;
 }
 
-/*
-.titleWImage {
-    display: inline;
-}
-
-#appIcon {
-    width: 4%;
-}
-
-#imageApp{
-    width: 80%;
-}
-
-li {
-    font-size: 1rem;
-    font-weight: 200;
-    margin: .5rem;
-}
-
-#gifApp{
-    width: 20%;
-}
-
-#working{
-    width: 40%;
-}
-
-#servC{
-    width: 75%;
-}
-
-#roadM{
-    width: 75%;
-}
-
-#storyBoard{
-    width: 55%;
-}
-
-#stakeholderMap{
-    width: 65%;
-}
-*/
-
 
 /*********** ABOUT ************/
 #team {
@@ -239,6 +195,12 @@ li {
     color: #C9C9C9;
 }
 
+
+/*********** MISC ************/
+
+#houseI {
+    width: 20%;
+}
 
 /*********** LIGHTBOX ************/
 .blockCont{
@@ -294,31 +256,6 @@ li {
     background-color: rgba(55,55,55, 0.99)
 }
 
-.modal-content {/*
-  position: relative;
-  background-color: #f8f8f8;
-  margin: auto;
-  padding-left: 30%;
-  width: 65%;
-  max-width: 1000px;*/
-}
-
-.close {
-    color: #f8f8f8;
-    position: absolute;
-    top: 1%;
-    right: 1.5625rem;
-    font-size: 2.25rem;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #0D47EA;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .columnT {
     float: left;
     width: 35%;
@@ -333,6 +270,7 @@ li {
     color: #f8f8f8;
     background-color: rgba(55,55,55, 0.95);
     font-size: 1.5rem;
+    line-height: 1.5rem;
     padding-left: 3rem;
     padding-right: 10%;
 }
@@ -341,6 +279,7 @@ li {
     color: #f8f8f8;
     background-color: rgba(55,55,55, 0.95);
     font-size: 1.125rem;
+    line-height: 1.5rem;
     padding-left: 3rem;
     padding-right: 10%;
 }
@@ -388,19 +327,22 @@ li {
     background-color: rgba(13,71,234, 0.75);
 }
 
-/* Caption text
-.caption-container {
-    position: left;
-    text-align: left;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
+/* Close button */
+.close {
+    color: #f8f8f8;
+    position: absolute;
+    top: 1%;
+    right: 1.5625rem;
+    font-size: 2.25rem;
+    font-weight: bold;
 }
 
-.active,
-.demo:hover {
-  opacity: 1;
-} */
+.close:hover,
+.close:focus {
+    color: #0D47EA;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 /*********** SCROLL ************/
@@ -414,10 +356,15 @@ section {
 }
 
 
-/*********** SMALLER BREAK POINT ************/
+/*********** RESPONSIVE BREAK POINT ************/
 @media screen and (max-width: 770px){
     body{
         letter-spacing: 0.0625rem;
+    }
+
+    section {
+        padding-top: .5rem;
+        padding-bottom: .8rem;
     }
 
     #navbar a{
@@ -444,16 +391,19 @@ section {
     .blockText{
         hyphens: auto;
         font-size: 1rem;
-        line-height: 1.4rem;
+        line-height: 1.2rem;
         margin-top: 12.5%;
     }
 
+    .insetTitle {;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .insetText {
+        font-size: .9rem;
+        line-height: 1rem;
+        padding-left: 3rem;
+    }
+
 }
-
-
-/*********** SMALLEST BREAK POINT ************/
-
-
-/*********** LARGEST BREAK POINT ************/
-
-
